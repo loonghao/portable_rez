@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+
+# PyCharm project files
+.idea/
+
+# Vim / Notepad++ temp files
+*~
+
+# Rez build output
+build/
+
+# Coverage output
+.coverage
+
+# Documentation build folders.
+docs/_*
+docs/src/*
+
+# The .egg file that gets created when using `THM_INSTALL_EDITABLE`.
+*.egg-info
+
+# The pytest cache when running pytest on the package.
+.pytest_cache
+
+# Anything in the hidden tox folder and the base configuration.
+.tox/*
+
+# Porting package folder
+.packagecreator
+
+venv/
+/venv_python/
+/.eggs/
