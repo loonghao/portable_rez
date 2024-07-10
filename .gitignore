@@ -32,3 +32,6 @@ docs/src/*
 venv/
 /venv_python/
 /.eggs/
+.zip/
+.nox/
+run_pycharm.bat
