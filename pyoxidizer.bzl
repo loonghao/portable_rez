@@ -31,7 +31,7 @@ def make_exe():
     # levels. The default optimization level used by Python is 0.
     # policy.bytecode_optimize_level_zero = True
     # policy.bytecode_optimize_level_one = True
-    # policy.bytecode_optimize_level_two = True
+    policy.bytecode_optimize_level_two = True
 
     # Package all available Python extensions in the distribution.
     # policy.extension_module_filter = "all"
@@ -183,7 +183,7 @@ def make_exe():
     # python_config.sys_frozen = False
 
     # Set `sys.meipass`
-    python_config.sys_meipass = True
+    # python_config.sys_meipass = True
 
     # Write files containing loaded modules to the directory specified
     # by the given environment variable.
@@ -246,7 +246,7 @@ def make_exe():
     # `add_python_resources()` adds these objects to the binary, with a load
     # location as defined by the packaging policy's resource location
     # attributes.
-    for resource in exe.pip_install(["--no-binary", "all", "rez"]):
+    for resource in exe.pip_install(["--no-binary", "all", "rez==3.1.1", "pyside2", "qt.py", "graphviz"]):
         resource.add_location = "filesystem-relative:lib/site-packages"
         exe.add_python_resource(resource)
 

@@ -2,8 +2,12 @@
 
 A portable rez (Windows only)
 
-## required
-- python-3 
+## setup dev env
+```shell
+pip install -r requirements-dev.txt
+```
 
 ## build portable rez
-check `build.bat`
+```shell
+nox -s build-exe
+```
