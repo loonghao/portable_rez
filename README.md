@@ -11,3 +11,8 @@ pip install -r requirements-dev.txt
 ```shell
 nox -s build-exe
 ```
+
+## build portable rez release
+```shell
+nox -s build-exe -- --release
+```
