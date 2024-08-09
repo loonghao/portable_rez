@@ -1,6 +1,5 @@
 # Import third-party modules
 import nox
-
 from nox_actions.utils import PACKAGE_NAME
 
 
