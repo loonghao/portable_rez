@@ -6,8 +6,8 @@ import zipfile
 
 # Import third-party modules
 import nox
-
-from nox_actions.utils import PACKAGE_NAME, THIS_ROOT
+from nox_actions.utils import PACKAGE_NAME
+from nox_actions.utils import THIS_ROOT
 
 
 @nox.session(name="build-exe", reuse_venv=True)
