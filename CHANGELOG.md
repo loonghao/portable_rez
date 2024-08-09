@@ -1,3 +1,9 @@
+## v0.2.3 (2024-08-09)
+
+### Refactor
+
+- deploy new version
+
 ## v0.2.2 (2024-08-09)
 
 ### Refactor
