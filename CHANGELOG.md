@@ -1,3 +1,9 @@
+## v0.4.2 (2024-08-10)
+
+### Refactor
+
+- Upload multiple artifacts to release.
+
 ## v0.4.1 (2024-08-10)
 
 ### Refactor
