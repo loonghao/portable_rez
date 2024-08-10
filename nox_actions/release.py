@@ -1,7 +1,6 @@
 # Import built-in modules
 import argparse
 import os
-import shutil
 import subprocess
 import zipfile
 
@@ -37,7 +36,6 @@ def build_exe(session: nox.Session) -> None:
 
         if args.release:
             temp_dir = os.path.join(THIS_ROOT, ".zip")
-            shutil.rmtree(temp_dir, ignore_errors=True)
             version = str(args.version)
             print(f"make zip to current version: {version}")
             os.makedirs(temp_dir, exist_ok=True)
