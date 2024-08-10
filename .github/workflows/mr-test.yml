@@ -3,13 +3,19 @@ on: [ pull_request ]
 
 jobs:
   python-check:
-    runs-on: ${{ matrix.os }}
     strategy:
       max-parallel: 3
       matrix:
-        os: [ 'windows-2019' ]
+        target:
+          - os: 'ubuntu-22.04'
+            triple: 'x86_64-unknown-linux-musl-gnu'
+          - os: 'macos-12'
+            triple: 'x86_64-apple-darwin'
+          - os: 'windows-2022'
+            triple: 'x86_64-pc-windows-msvc'
         python-version: ["3.10"]
       fail-fast: false
+    runs-on: ${{ matrix.target.os }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,5 +32,4 @@ jobs:
           nox -s lint
       - name: test build
         run: |
-          nox -s build-exe
-          build\x86_64-pc-windows-msvc\release\install\rez.exe env --help
+          nox -s build-exe -- --test
