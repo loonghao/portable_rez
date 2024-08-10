@@ -1,3 +1,9 @@
+## v0.3.7 (2024-08-10)
+
+### Refactor
+
+- fix zip name
+
 ## v0.3.6 (2024-08-10)
 
 ### Refactor
