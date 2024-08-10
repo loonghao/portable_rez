@@ -1,3 +1,9 @@
+## v0.3.0 (2024-08-10)
+
+### Feat
+
+- Update ci to support Mac and Linux
+
 ## v0.2.3 (2024-08-09)
 
 ### Refactor

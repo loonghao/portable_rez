@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "portable-rez"
-version = "0.2.3"
+version = "0.3.0"
 description = "Portable Rez"
 authors = ["loonghao <hal.long@outlook.com>"]
 readme = "README.md"
@@ -10,7 +10,7 @@ python = "^3.10"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.2.3"
+version = "0.3.0"
 tag_format = "v$version"
 version_files = [
     "pyproject.toml:version",
