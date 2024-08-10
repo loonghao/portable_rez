@@ -67,8 +67,12 @@ jobs:
             shutil.rmtree(temp_dir, ignore_errors=True)
   upload-zip:
     needs:
-      - build_exe
+      - deploy
     runs-on: 'windows-2022'
+    permissions:
+      # IMPORTANT: this permission is mandatory for trusted publishing
+      id-token: write
+      contents: write
     steps:
       - uses: ncipollo/release-action@v1
         with:
