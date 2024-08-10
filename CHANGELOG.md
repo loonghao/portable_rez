@@ -1,3 +1,9 @@
+## v0.3.2 (2024-08-10)
+
+### Refactor
+
+- split upload process
+
 ## v0.3.1 (2024-08-10)
 
 ### Fix
