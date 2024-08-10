@@ -1,3 +1,9 @@
+## v0.3.6 (2024-08-10)
+
+### Refactor
+
+- Add download process.
+
 ## v0.3.5 (2024-08-10)
 
 ### Fix
