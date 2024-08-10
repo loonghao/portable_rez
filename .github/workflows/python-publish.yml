@@ -51,25 +51,6 @@ jobs:
       with:
         name: portable_rez-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}
         path: .zip/portable_rez-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}.zip
-    - name: Generate changelog
-      id: changelog
-      uses: jaywcjlove/changelog-generator@main
-      with:
-        token: "${{ secrets.GITHUB_TOKEN }}"
-        filter-author: (|dependabot|renovate\\[bot\\]|dependabot\\[bot\\]|Renovate Bot)
-        filter: '[R|r]elease[d]\s+[v|V]\d(\.\d+){0,2}'
-        template: |
-          ## Bugs
-          {{fix}}
-          ## Feature
-          {{feat}}
-          ## Improve
-          {{refactor,perf,clean}}
-          ## Misc
-          {{chore,style,ci||🔶 Nothing change}}
-          ## Unknown
-          {{__unknown__}}
-            shutil.rmtree(temp_dir, ignore_errors=True)
 
   upload-artifact:
     needs: deploy
@@ -85,6 +66,24 @@ jobs:
           path: artifact
           merge-multiple: true
       - run: ls -R artifact
+      - name: Generate changelog
+        id: changelog
+        uses: jaywcjlove/changelog-generator@main
+        with:
+          token: "${{ secrets.GITHUB_TOKEN }}"
+          filter-author: (|dependabot|renovate\\[bot\\]|dependabot\\[bot\\]|Renovate Bot)
+          filter: '[R|r]elease[d]\s+[v|V]\d(\.\d+){0,2}'
+          template: |
+            ## Bugs
+            {{fix}}
+            ## Feature
+            {{feat}}
+            ## Improve
+            {{refactor,perf,clean}}
+            ## Misc
+            {{chore,style,ci||🔶 Nothing change}}
+            ## Unknown
+            {{__unknown__}}
       - uses: ncipollo/release-action@v1
         with:
           artifacts: artifact/*
