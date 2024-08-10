@@ -51,11 +51,6 @@ jobs:
       with:
         name: portable_rez-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}
         path: .zip/portable_rez-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}.zip
-    - name: Download
-      uses: actions/download-artifact@v4
-      with:
-        name: portable_rez-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}
-        path: portable_rez-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}
     - name: Generate changelog
       id: changelog
       uses: jaywcjlove/changelog-generator@main
@@ -75,11 +70,22 @@ jobs:
           ## Unknown
           {{__unknown__}}
             shutil.rmtree(temp_dir, ignore_errors=True)
-    - uses: ncipollo/release-action@v1
-      with:
-        artifacts: .zip/portable_rez-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}.zip
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-        body: |
-          Comparing Changes: ${{ steps.changelog.outputs.compareurl }}
 
-          ${{ steps.changelog.outputs.changelog }}
+  upload-artifact:
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      # IMPORTANT: this permission is mandatory for trusted publishing
+      id-token: write
+      contents: write
+    steps:
+      - name: Download
+        uses: actions/download-artifact@v4
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: portable_rez-*.zip
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          body: |
+            Comparing Changes: ${{ steps.changelog.outputs.compareurl }}
+  
+            ${{ steps.changelog.outputs.changelog }}
