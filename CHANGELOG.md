@@ -1,3 +1,9 @@
+## v0.4.1 (2024-08-10)
+
+### Refactor
+
+- Upload artifacts to release.
+
 ## v0.4.0 (2024-08-10)
 
 ### Feat
