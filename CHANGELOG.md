@@ -1,3 +1,9 @@
+## v0.3.4 (2024-08-10)
+
+### Refactor
+
+- update use actions/upload-artifact@v4
+
 ## v0.3.3 (2024-08-10)
 
 ### Fix
