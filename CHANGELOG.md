@@ -1,3 +1,9 @@
+## v0.4.0 (2024-08-10)
+
+### Feat
+
+- Update use new zip name
+
 ## v0.3.7 (2024-08-10)
 
 ### Refactor
