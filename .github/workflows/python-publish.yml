@@ -65,20 +65,8 @@ jobs:
           ## Unknown
           {{__unknown__}}
             shutil.rmtree(temp_dir, ignore_errors=True)
-  upload-zip:
-    needs:
-      - deploy
-    runs-on: 'windows-2022'
-    permissions:
-      # IMPORTANT: this permission is mandatory for trusted publishing
-      id-token: write
-      contents: write
-    steps:
-      - uses: ncipollo/release-action@v1
-        with:
-          artifacts: ".zip/portable_rez-*.zip"
-          token: "${{ secrets.GITHUB_TOKEN }}"
-          body: |
-            Comparing Changes: ${{ steps.changelog.outputs.compareurl }}
-  
-            ${{ steps.changelog.outputs.changelog }}
+    - name: Upload
+      uses: actions/upload-artifact@v4
+      with:
+        name: protable_rez-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}
+        path: .zip/protable_rez-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}.zip
