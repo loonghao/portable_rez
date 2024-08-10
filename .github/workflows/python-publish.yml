@@ -12,7 +12,7 @@ jobs:
       matrix:
         target:
           - os: 'ubuntu-22.04'
-            triple: 'x86_64-unknown-linux-musl-gnu'
+            triple: 'x86_64-unknown-linux-musl'
           - os: 'macos-12'
             triple: 'x86_64-apple-darwin'
           - os: 'windows-2022'
@@ -70,3 +70,8 @@ jobs:
       with:
         name: portable_rez-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}
         path: .zip/portable_rez-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}.zip
+    - name: Download
+      uses: actions/download-artifact@v4
+      with:
+        name: portable_rez-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}
+        path: portable_rez-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}
