@@ -81,9 +81,13 @@ jobs:
     steps:
       - name: Download
         uses: actions/download-artifact@v4
+        with:
+          path: artifact
+          merge-multiple: true
+      - run: ls -R my-artifact
       - uses: ncipollo/release-action@v1
         with:
-          artifacts: portable_rez-*.zip
+          artifacts: artifact/*
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           body: |
             Comparing Changes: ${{ steps.changelog.outputs.compareurl }}
