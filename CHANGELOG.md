@@ -1,3 +1,9 @@
+## v0.4.5 (2024-08-10)
+
+### Refactor
+
+- refactor changelog
+
 ## v0.4.4 (2024-08-10)
 
 ### Fix
