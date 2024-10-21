@@ -1,3 +1,9 @@
+## v0.5.0 (2024-10-21)
+
+### Feat
+
+- Update Rez version from 3.1.1 to 3.2.0 in pyoxidizer.bzl
+
 ## v0.4.5 (2024-08-10)
 
 ### Refactor
