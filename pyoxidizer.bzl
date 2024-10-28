@@ -246,7 +246,7 @@ def make_exe():
     # `add_python_resources()` adds these objects to the binary, with a load
     # location as defined by the packaging policy's resource location
     # attributes.
-    for resource in exe.pip_install(["--no-binary", "all", "rez==3.2.0", "pyside2", "qt.py", "graphviz"]):
+    for resource in exe.pip_install(["--no-binary", "all", "rez==3.2.1", "pyside2", "qt.py", "graphviz"]):
         resource.add_location = "filesystem-relative:lib/site-packages"
         exe.add_python_resource(resource)
 
