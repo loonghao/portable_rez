@@ -1,3 +1,9 @@
+## v0.5.1 (2024-10-28)
+
+### Refactor
+
+- update pyoxidizer.bzl module modification
+
 ## v0.5.0 (2024-10-21)
 
 ### Feat
