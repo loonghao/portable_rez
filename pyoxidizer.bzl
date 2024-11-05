@@ -241,15 +241,6 @@ def make_exe():
     # policy's resource location attributes.
     #exe.add_python_resources(exe.pip_download(["pyflakes==2.2.0"]))
 
-    # Invoke `pip install` with our Python distribution to install a single package.
-    # `pip_install()` returns objects representing installed files.
-    # `add_python_resources()` adds these objects to the binary, with a load
-    # location as defined by the packaging policy's resource location
-    # attributes.
-    for resource in exe.pip_install(["--no-binary", "all", "rez==3.2.1", "pyside2", "qt.py", "graphviz"]):
-        resource.add_location = "filesystem-relative:lib/site-packages"
-        exe.add_python_resource(resource)
-
     # Invoke `pip install` using a requirements file and add the collected resources
     # to our binary.
     for resource in exe.pip_install([CWD]):
