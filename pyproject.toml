@@ -6,7 +6,7 @@ authors = ["loonghao <hal.long@outlook.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.10,<3.11"
+python = ">=3.13,<3.14"
 rez = "^3.2.1"
 pyside2 = "^5.15.2.1"
 graphviz = "^0.20.3"
