@@ -1,3 +1,9 @@
+## v0.5.3 (2024-11-08)
+
+### Refactor
+
+- Refactor release script for better readability
+
 ## v0.5.2 (2024-11-08)
 
 ### Refactor
