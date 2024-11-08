@@ -1,3 +1,9 @@
+## v0.5.5 (2024-11-08)
+
+### Refactor
+
+- Update .gitignore, CI workflow, and release script
+
 ## v0.5.4 (2024-11-08)
 
 ### Refactor
