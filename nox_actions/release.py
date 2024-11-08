@@ -32,6 +32,8 @@ def build_exe(session: nox.Session) -> None:
     for platform_name in os.listdir(build_root):
         platform_dir = build_root / platform_name / "release" / "install"
         site_package_dir = platform_dir / "lib" / "site-packages"
+
+
         shutil.rmtree(site_package_dir / "bin")
         print(os.listdir(platform_dir))
         print(f"build {platform_name}")
