@@ -35,13 +35,13 @@ def build_exe(session: nox.Session) -> None:
         shutil.rmtree(site_package_dir / "bin")
         print(os.listdir(platform_dir))
         print(f"build {platform_name}")
-        print(f"rename {binary_name} to {rez_binary_name}")
+        print(f"rename {binary_name} to {rez_binary_name}...")
         rez_exe = platform_dir / binary_name
         new_rez_exe = platform_dir / rez_binary_name
         rez_exe.rename(new_rez_exe)
 
         if args.test:
-            print("run tests")
+            print("run tests...")
             subprocess.check_call(["rez", "--help"], cwd=platform_dir)
 
         if "windows" in platform_name.lower():
@@ -67,7 +67,7 @@ def build_exe(session: nox.Session) -> None:
         if args.release:
             temp_dir = os.path.join(THIS_ROOT, ".zip")
             version = str(args.version)
-            print(f"make zip to current version: {version}")
+            print(f"make zip to current version: {version}...")
             os.makedirs(temp_dir, exist_ok=True)
             zip_file = os.path.join(temp_dir, f"{PACKAGE_NAME}-{version}-{platform_name}.rez-{_rez_version}.zip")
             with zipfile.ZipFile(zip_file, "w") as zip_obj:
