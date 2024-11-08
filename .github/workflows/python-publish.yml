@@ -50,7 +50,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: portable_rez-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}
-        path: .zip/
+        path: artifact/portable_rez-${{ steps.get_tag_name.outputs.version }}-${{ matrix.target.triple }}.rez-*.zip
 
   upload-artifact:
     needs: deploy
