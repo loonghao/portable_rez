@@ -1,3 +1,9 @@
+## v0.5.4 (2024-11-08)
+
+### Refactor
+
+- **deps**: update pyoxidizer.bzl and nox_actions/release.py
+
 ## v0.5.3 (2024-11-08)
 
 ### Refactor
