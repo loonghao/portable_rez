@@ -1,3 +1,9 @@
+## v0.5.2 (2024-11-08)
+
+### Refactor
+
+- Update dependencies and modify release script
+
 ## v0.5.1 (2024-10-28)
 
 ### Refactor
