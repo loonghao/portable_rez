@@ -6,8 +6,8 @@
 A Portable [rez](https://github.com/AcademySoftwareFoundation/rez) base on [PyOxidizer](https://github.com/indygreg/PyOxidizer)
 
 
-`PyOxidizer` is a utility for producing binaries that embed Python. 
-The over-arching goal of PyOxidizer is to make complex packaging and distribution problems simple so 
+`PyOxidizer` is a utility for producing binaries that embed Python.
+The over-arching goal of PyOxidizer is to make complex packaging and distribution problems simple so
 application maintainers can focus on building applications instead of toiling with build systems and packaging tools.
 
 [PyOxidizer Comparisons to Other Tools](https://pyoxidizer.readthedocs.io/en/stable/pyoxidizer_comparisons.html?highlight=comparisons)
