@@ -12,6 +12,9 @@ application maintainers can focus on building applications instead of toiling wi
 
 [PyOxidizer Comparisons to Other Tools](https://pyoxidizer.readthedocs.io/en/stable/pyoxidizer_comparisons.html?highlight=comparisons)
 
+![](resources/images/2024-11-09_013107.png)
+![](resources/images/2024-11-09_012907.png)
+
 ## Setup dev env
 ```shell
 pip install -r requirements-dev.txt
