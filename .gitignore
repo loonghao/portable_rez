@@ -9,6 +9,7 @@
 
 # Rez build output
 build/
+artifact/
 
 # Coverage output
 .coverage

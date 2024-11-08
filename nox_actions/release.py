@@ -67,7 +67,7 @@ def build_exe(session: nox.Session) -> None:
                     f.write(template)
 
         if args.release:
-            temp_dir = os.path.join(THIS_ROOT, ".zip")
+            temp_dir = os.path.join(THIS_ROOT, "artifact")
             version = str(args.version)
             print(f"make zip to current version: {version}...")
             os.makedirs(temp_dir, exist_ok=True)
