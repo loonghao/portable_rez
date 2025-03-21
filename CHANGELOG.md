@@ -1,3 +1,9 @@
+## v0.5.6 (2025-03-21)
+
+### Fix
+
+- **deps**: update dependency qt-py to v1.4.2
+
 ## v0.5.5 (2024-11-08)
 
 ### Refactor
