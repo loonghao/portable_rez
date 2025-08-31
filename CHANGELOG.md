@@ -1,3 +1,9 @@
+## v0.5.7 (2025-08-31)
+
+### Fix
+
+- **deps**: update dependency qt-py to v1.4.6
+
 ## v0.5.6 (2025-03-21)
 
 ### Fix
