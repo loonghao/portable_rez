@@ -36,13 +36,13 @@ shiboken2 = "5.15.2.1"
 
 [[package]]
 name = "qt-py"
-version = "1.4.6"
+version = "1.4.8"
 description = "Python 2 & 3 compatibility wrapper around all Qt bindings - PySide, PySide2, PyQt4 and PyQt5."
 optional = false
 python-versions = "*"
 files = [
-    {file = "qt_py-1.4.6-py2.py3-none-any.whl", hash = "sha256:1e0f8da9af74f2b3448904fab313f6f79cad56b82895f1a2c541243f00cc244e"},
-    {file = "qt_py-1.4.6.tar.gz", hash = "sha256:d26f808a093754f0b44858745965bab138525cffc77c1296a3293171b2e2469f"},
+    {file = "qt_py-1.4.8-py2.py3-none-any.whl", hash = "sha256:bccb05611a904689569ef73372adfd2c47bd9307ee9f795477cc2b981b0fce65"},
+    {file = "qt_py-1.4.8.tar.gz", hash = "sha256:3ca0e4526bc53cf0a8c6d1fbf1dce2554ed5daa1a4abf0e3e67f73bbc9799b39"},
 ]
 
 [package.dependencies]
