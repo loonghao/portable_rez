@@ -36,17 +36,20 @@ shiboken2 = "5.15.2.1"
 
 [[package]]
 name = "qt-py"
-version = "1.4.6"
-description = "Python 2 & 3 compatibility wrapper around all Qt bindings - PySide, PySide2, PyQt4 and PyQt5."
+version = "2.0.5"
+description = "Python compatibility wrapper around Qt5 and Qt6 bindings - PySide2, PySide6, PyQt5 and PyQt6."
 optional = false
-python-versions = "*"
+python-versions = ">=3.7"
 files = [
-    {file = "qt_py-1.4.6-py2.py3-none-any.whl", hash = "sha256:1e0f8da9af74f2b3448904fab313f6f79cad56b82895f1a2c541243f00cc244e"},
-    {file = "qt_py-1.4.6.tar.gz", hash = "sha256:d26f808a093754f0b44858745965bab138525cffc77c1296a3293171b2e2469f"},
+    {file = "qt_py-2.0.5-py3-none-any.whl", hash = "sha256:c5b6255493a9c47e94527b07d8f58cdaa7764a7f4f9af88d7d020f673da747cc"},
+    {file = "qt_py-2.0.5.tar.gz", hash = "sha256:aa5bc8cb0a11bc7b7babcb8e75dfc0ed1a1d84a56e951cd5584ee7a6591a348d"},
 ]
 
 [package.dependencies]
-types-PySide2 = "*"
+types-PySide6 = "*"
+
+[package.extras]
+dev = ["mypy (==1.19.1)", "ruff (==0.15.0)", "tox (>=4,<5)"]
 
 [[package]]
 name = "rez"
@@ -75,17 +78,16 @@ files = [
 ]
 
 [[package]]
-name = "types-pyside2"
-version = "5.15.2.1.7"
-description = "The most accurate stubs for PySide2"
+name = "types-pyside6"
+version = "6.10.3.0"
+description = "The most accurate stubs for PySide6"
 optional = false
 python-versions = "*"
 files = [
-    {file = "types_pyside2-5.15.2.1.7-py2.py3-none-any.whl", hash = "sha256:a7bec4cb4657179415ca7ec7c70a45f9f9938664e22f385c85fd7cd724b07d4d"},
-    {file = "types_pyside2-5.15.2.1.7.tar.gz", hash = "sha256:1d65072deb97481ad481b3414f94d02fd5da07f5e709c2d439ced14f79b2537c"},
+    {file = "types_pyside6-6.10.3.0-py2.py3-none-any.whl", hash = "sha256:abb3360637b1980c0d8b456c9b3f3031e0d0dd146df03b677e17a577e9892b8e"},
 ]
 
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.11"
-content-hash = "0f98902387243360fc3065d2848618178c71ca9119aa3393c81b89f9918fe402"
+content-hash = "29a3f5efd0d6860680811b2775a168e17abf41ebf040ec501d591e72f9a0fde2"
