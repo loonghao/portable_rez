@@ -86,6 +86,7 @@ jobs:
             {{__unknown__}}
       - uses: ncipollo/release-action@v1
         with:
+          allowUpdates: true
           artifacts: artifact/*
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           body: |

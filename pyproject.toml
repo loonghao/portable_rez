@@ -12,15 +12,6 @@ pyside2 = "^5.15.2.1"
 graphviz = "^0.20.3"
 qt-py = "^1.4.1"
 
-[tool.commitizen]
-name = "cz_conventional_commits"
-version = "0.5.7"
-tag_format = "v$version"
-version_files = [
-    "pyproject.toml:version",
-]
-
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
