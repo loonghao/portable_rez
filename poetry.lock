@@ -50,13 +50,13 @@ types-PySide2 = "*"
 
 [[package]]
 name = "rez"
-version = "3.2.1"
+version = "3.4.0"
 description = "A cross-platform packaging system that can build and install multiple version of packages, and dynamically configure resolved environments at runtime."
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "rez-3.2.1-py3-none-any.whl", hash = "sha256:f411f75662a3ddf06941cb9579869768b117f9bb744d428e1146b1afc999fb51"},
-    {file = "rez-3.2.1.tar.gz", hash = "sha256:f74559499ac12f09b54f0caf9f0c54db70675ef8c8f84dd1dd08ee487be7959d"},
+    {file = "rez-3.4.0-py3-none-any.whl", hash = "sha256:d5f45c2bc759a85f0efd91078f541c1c0455577bf4fd42ca23d645013295bf60"},
+    {file = "rez-3.4.0.tar.gz", hash = "sha256:57e03cd2a9dbab818290756de0fd1205fbd898b1e02205dbe2c90a7d0d0f5159"},
 ]
 
 [[package]]
