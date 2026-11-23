@@ -1,0 +1,14 @@
+NOTICE
+
+Repository-owned source is Copyright (c) 2026 Long Hao (Hal Long).
+
+The current repository-owned source remains under the MIT License in LICENSE.
+This notice records attribution and does not change that existing license.
+Rez, PySide2/Qt, Graphviz, Qt.py, and other runtime or build dependencies
+remain under their own licenses and notices. Keep those notices with any
+redistribution.
+
+portable_rez names and branding identify this project and its maintainers.
+This notice does not grant rights to third-party trademarks or imply
+endorsement by a host vendor. Commercial distribution contact is welcome, but
+it is not required.

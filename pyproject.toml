@@ -4,6 +4,7 @@ version = "0.5.7"
 description = "Portable Rez"
 authors = ["loonghao <hal.long@outlook.com>"]
 readme = "README.md"
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.11"
