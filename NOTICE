@@ -1,0 +1,14 @@
+NOTICE
+
+Repository-owned source is Copyright (c) 2026 Long Hao (Hal Long).
+
+The current repository-owned source remains under the MIT License in LICENSE.
+This notice records attribution and does not change that existing license.
+Third-party libraries, host applications, SDKs, runtimes, bundled binaries,
+models, sample assets, generated files, upstream packages, and other included
+material remain under their own licenses and notices. Keep those notices with
+any redistribution.
+
+DCC-MCP is an independent project and ecosystem name. This notice does not
+grant rights to third-party trademarks or imply endorsement by a host vendor.
+Commercial distribution contact is welcome, but it is not required.
