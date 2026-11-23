@@ -29,3 +29,9 @@ nox -s build-exe
 ```shell
 nox -s build-exe -- --release
 ```
+
+## License
+
+The original `portable_rez` source code is available under the MIT License in
+[LICENSE](LICENSE). Rez, PySide2/Qt, Graphviz, Qt.py, and other runtime or build
+dependencies retain their own licenses and redistribution requirements.
